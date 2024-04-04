@@ -7,15 +7,11 @@ public class Main {
         int b = scanner.nextInt();
         int n = scanner.nextInt();
 
-        int quotient;
-        int count = 10;
-
         for (int i = 0; i <= n; i++) {
-            quotient = a / b;
             if(i == n)
-                System.out.println(quotient);
+                System.out.println(a/b);
             a %=b;
-            a *= count;
+            a *= 10;
         }
     }
 }
